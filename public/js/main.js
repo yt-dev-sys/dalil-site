@@ -9,7 +9,7 @@ var CONFIG={
   seatsLeft:50
 };
 var T={
-ar:{promo_t:"عرض الإطلاق: خصم 50% لأول 50 مسجّلًا",promo_d:"سجّل الآن لتحصل على خصم 50% على السعر عند إطلاق النسخة المدفوعة.",promo_reg:"للتسجيل، تواصل معي:",seats_l:"مقعدًا متبقيًا",promo_full:"اكتملت المقاعد",q0:"كيف أسجّل؟",a0:"تواصل مع المطوّر عبر تيليجرام أو واتساب وسيتم تسجيلك. أول 50 مسجّلًا يحصلون على خصم 50%.",nav1:"المزايا",nav2:"كيف يعمل",nav3:"أسئلة شائعة",dl:"تحميل",dl2:"حمّل النسخة التجريبية المجانية",
+ar:{promo_cta:"كيف أسجّل؟",promo_live:"التسجيل مفتوح",promo_t:"عرض الإطلاق: خصم 50% لأول 50 مسجّلًا",promo_d:"سجّل الآن لتحصل على خصم 50% على السعر عند إطلاق النسخة المدفوعة.",promo_reg:"للتسجيل، تواصل معي:",seats_l:"مقعدًا متبقيًا",promo_full:"اكتملت المقاعد",q0:"كيف أسجّل؟",a0:"تواصل مع المطوّر عبر تيليجرام أو واتساب وسيتم تسجيلك. أول 50 مسجّلًا يحصلون على خصم 50%.",nav1:"المزايا",nav2:"كيف يعمل",nav3:"أسئلة شائعة",dl:"تحميل",dl2:"حمّل النسخة التجريبية المجانية",
 badge:"نسخة تجريبية مجانية",
 h1:"ابحث عن أي كلمة داخل كل ملفاتك.",
 lead:"دليل يفهرس ملفات Word وExcel وPDF على حاسوبك، فتكتب الكلمة وتظهر لك كل الملفات التي تحتوي عليها في ثوانٍ، بدون إنترنت.",
@@ -35,7 +35,7 @@ q4:"هل يعمل على ماك أو الهاتف؟",a4:"لا، دليل لوي�
 q5:"هل يُرسل ملفاتي إلى الإنترنت؟",a5:"لا. الفهرس محلي بالكامل، والإنترنت يُستعمل فقط للتحقق من التحديثات.",
 fin:"جرّب دليل اليوم",finp:"حمّله، اختر مجلدًا، واكتب أول كلمة. وإن أردت مساعدة، راسلني.",
 ftc:"تواصل مع المطوّر",rights:"جميع الحقوق محفوظة"},
-fr:{promo_t:"Offre de lancement : 50 % de réduction pour les 50 premiers inscrits",promo_d:"Inscrivez-vous maintenant pour bénéficier de 50 % de réduction sur le prix à la sortie de la version payante.",promo_reg:"Pour vous inscrire, contactez-moi :",seats_l:"places restantes",promo_full:"Toutes les places sont prises",q0:"Comment s’inscrire ?",a0:"Contactez le développeur sur Telegram ou WhatsApp pour être inscrit. Les 50 premiers inscrits bénéficient de 50 % de réduction.",nav1:"Fonctionnalités",nav2:"Fonctionnement",nav3:"FAQ",dl:"Télécharger",dl2:"Télécharger la bêta gratuite",
+fr:{promo_cta:"Comment s’inscrire ?",promo_live:"Inscriptions ouvertes",promo_t:"Offre de lancement : 50 % de réduction pour les 50 premiers inscrits",promo_d:"Inscrivez-vous maintenant pour bénéficier de 50 % de réduction sur le prix à la sortie de la version payante.",promo_reg:"Pour vous inscrire, contactez-moi :",seats_l:"places restantes",promo_full:"Toutes les places sont prises",q0:"Comment s’inscrire ?",a0:"Contactez le développeur sur Telegram ou WhatsApp pour être inscrit. Les 50 premiers inscrits bénéficient de 50 % de réduction.",nav1:"Fonctionnalités",nav2:"Fonctionnement",nav3:"FAQ",dl:"Télécharger",dl2:"Télécharger la bêta gratuite",
 badge:"Bêta gratuite",
 h1:"Retrouvez n’importe quel mot dans tous vos fichiers.",
 lead:"Dalil indexe vos documents Word, Excel et PDF. Tapez un mot et voyez en quelques secondes tous les fichiers qui le contiennent, sans connexion internet.",
@@ -61,7 +61,7 @@ q4:"Existe-t-il sur Mac ou mobile ?",a4:"Non, Dalil fonctionne uniquement sous W
 q5:"Mes fichiers sont-ils envoyés sur internet ?",a5:"Non. L’index est entièrement local. Internet sert uniquement à vérifier les mises à jour.",
 fin:"Essayez Dalil aujourd’hui",finp:"Téléchargez-le, choisissez un dossier et tapez votre premier mot. Besoin d’aide ? Écrivez-moi.",
 ftc:"Contacter le développeur",rights:"Tous droits réservés"},
-en:{promo_t:"Launch offer: 50% off for the first 50 users",promo_d:"Register now to get 50% off the price when the paid version launches.",promo_reg:"To register, contact me:",seats_l:"seats left",promo_full:"All seats are taken",q0:"How do I register?",a0:"Contact the developer on Telegram or WhatsApp and you’ll be registered. The first 50 users get 50% off.",nav1:"Features",nav2:"How it works",nav3:"FAQ",dl:"Download",dl2:"Download the free beta",
+en:{promo_cta:"How to register?",promo_live:"Registration open",promo_t:"Launch offer: 50% off for the first 50 users",promo_d:"Register now to get 50% off the price when the paid version launches.",promo_reg:"To register, contact me:",seats_l:"seats left",promo_full:"All seats are taken",q0:"How do I register?",a0:"Contact the developer on Telegram or WhatsApp and you’ll be registered. The first 50 users get 50% off.",nav1:"Features",nav2:"How it works",nav3:"FAQ",dl:"Download",dl2:"Download the free beta",
 badge:"Free beta",
 h1:"Find any word inside all your files.",
 lead:"Dalil indexes your Word, Excel and PDF files. Type a word and see every file that contains it in seconds, with no internet connection.",
@@ -90,7 +90,7 @@ ftc:"Contact the Dev",rights:"All rights reserved"}
 };
 function setLang(l){
   var d=T[l];document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
-  document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=d[e.getAttribute("data-i")]});
+  document.querySelectorAll("[data-i]").forEach(function(e){var v=d[e.getAttribute("data-i")];if(v!==undefined)e.textContent=v});
   document.title="Dalil — "+(l==="ar"?"دليل":l==="fr"?"Recherche dans vos fichiers":"Search your files");
   document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
   try{localStorage.setItem("dalil-lang",l)}catch(e){}
@@ -102,8 +102,14 @@ setLang(T[s]?s:"ar");
 document.querySelectorAll("a[data-dl]").forEach(function(a){a.href=CONFIG.downloadUrl});
 (function(){
   var t=CONFIG.promoTotal,l=Math.max(0,Math.min(t,Number(CONFIG.seatsLeft)||0));
-  document.getElementById("left").textContent=l;
-  document.getElementById("tot").textContent=t;
-  document.getElementById("bar").style.width=(100*l/t)+"%";
-  document.getElementById("promo").classList.toggle("full",l===0);
+  var n=document.getElementById("left"),g=document.getElementById("grid"),box=document.getElementById("promo");
+  document.getElementById("tot").textContent=t;n.textContent=l;
+  for(var i=0;i<t;i++){var d=document.createElement("i");if(i<t-l)d.className="taken";else d.style.animationDelay=((i*137)%1400)+"ms";g.appendChild(d)}
+  box.classList.toggle("full",l===0);
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  var io=new IntersectionObserver(function(e){
+    if(!e[0].isIntersecting)return;io.disconnect();var s=null;
+    function f(ts){s=s||ts;var q=Math.min(1,(ts-s)/1100);n.textContent=Math.round(l*(1-Math.pow(1-q,3)));if(q<1)requestAnimationFrame(f)}
+    requestAnimationFrame(f)},{threshold:.4});
+  io.observe(box);
 })();

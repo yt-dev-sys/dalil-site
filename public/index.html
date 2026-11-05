@@ -11,7 +11,7 @@
 <meta property="og:description" content="Find any word inside your Word, Excel and PDF files. Offline, private, Arabic-aware.">
 <meta name="theme-color" content="#0d1a33">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 <header><div class="wrap bar">
@@ -47,9 +47,14 @@
 </div>
 
 <section class="promo" id="promo"><div class="wrap promo-in">
-  <div><h2 data-i="promo_t">عرض الإطلاق: خصم 50% لأول 50 مسجّلًا</h2><p data-i="promo_d">سجّل الآن لتحصل على خصم 50% على السعر عند إطلاق النسخة المدفوعة.</p>
-    <p class="promo-reg"><span data-i="promo_reg">للتسجيل، تواصل معي:</span> <a class="c" href="https://t.me/Youssef_Touhami" target="_blank" rel="noopener">Telegram</a> <a class="c" href="https://wa.me/212716734889" target="_blank" rel="noopener">WhatsApp</a></p></div>
-  <div class="seats"><div class="num" dir="ltr"><strong id="left">50</strong><span>/<b id="tot">50</b></span></div><div class="label" data-i="seats_l">مقعدًا متبقيًا</div><div class="track"><i id="bar"></i></div><div class="full-msg" data-i="promo_full">اكتملت المقاعد</div></div>
+  <div><h2 data-i="promo_t">عرض الإطلاق: خصم 50% لأول 50 مسجّلًا</h2><p data-i="promo_d">سجّل الآن لتحصل على خصم 50% على السعر عند إطلاق النسخة المدفوعة.</p><a class="promo-cta" href="#faq" data-i="promo_cta">كيف أسجّل؟</a></div>
+  <div class="seats" aria-live="polite">
+    <div class="live"><i></i><span data-i="promo_live">التسجيل مفتوح</span></div>
+    <div class="num" dir="ltr"><strong id="left">50</strong><span>/<b id="tot">50</b></span></div>
+    <div class="label" data-i="seats_l">مقعدًا متبقيًا</div>
+    <div class="grid" id="grid" aria-hidden="true"></div>
+    <div class="full-msg" data-i="promo_full">اكتملت المقاعد</div>
+  </div>
 </div></section>
 
 <section id="features" class="alt"><div class="wrap">
@@ -104,6 +109,6 @@
   <p class="copy">© 2026 Dalil · <span data-i="rights">جميع الحقوق محفوظة</span></p>
 </div></footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=3" defer></script>
 </body>
 </html>

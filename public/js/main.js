@@ -4,7 +4,7 @@
    seatsLeft   : seats remaining in the promo. Change this number any time.
    promoTotal  : total promo seats. */
 var CONFIG={
-  downloadUrl:"https://github.com/yt-dev-sys/Dalil-Pub/releases",
+  downloadUrl:"https://github.com/yt-dev-sys/Dalil-Pub/releases#release-V1.0.0",
   promoTotal:50,
   seatsLeft:50
 };

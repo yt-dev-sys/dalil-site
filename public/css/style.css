@@ -108,3 +108,14 @@ footer{background:var(--navy);color:var(--on-navy);padding:38px 0 44px}
 .promo.full .full-msg{display:block}.promo.full .num,.promo.full .label{opacity:.5}
 @media (prefers-reduced-motion:reduce){.live i,.grid i{animation:none}}
 @media (max-width:860px){.promo-in{grid-template-columns:1fr}}
+#video h2{text-align:center}
+.video{position:relative;aspect-ratio:16/9;max-width:860px;margin:0 auto;border-radius:16px;overflow:hidden;background:#0d1a33 center/cover no-repeat;box-shadow:0 24px 50px -26px rgba(13,26,51,.8)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vplay{all:unset;cursor:pointer;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(13,26,51,.35)}
+.vplay:focus-visible{outline:3px solid var(--amber);outline-offset:-6px}
+.vplay .ic{width:88px;height:88px;border-radius:50%;background:var(--amber);display:grid;place-items:center;transition:transform .2s}
+.vplay:hover .ic{transform:scale(1.1)}
+.vplay svg{width:36px;height:36px;fill:#1a1200;margin-inline-start:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.vyt{text-align:center;margin:18px 0 0}
+.vyt a{font-weight:600;color:var(--amber-ink)}

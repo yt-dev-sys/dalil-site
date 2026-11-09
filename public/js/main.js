@@ -16,11 +16,11 @@ var CONFIG={
   videoId:"apQj7ovwVSE"
 };
 var T={
-ar:{vid_t:"شاهد كيف تثبّت دليل وتستعمله",vid_play:"تشغيل الفيديو",vid_yt:"شاهده على يوتيوب",promo_cta:"كيفاش نولّي مستعمل نشط؟",promo_live:"العرض مفتوح",promo_t:"150 درهمًا في السنة بدل 300 — لأول 50 مستعملًا نشطًا",promo_d:"العرض للمستعملين النشطين فقط: ثبّت دليل، فهرس مجلدًا واحدًا على الأقل، وابحث عن أول كلمة خلال التجربة. التسجيل وحده لا يكفي.",promo_reg:"للتسجيل، تواصل معي:",seats_l:"مقعدًا مؤسسًا متبقيًا",promo_full:"اكتملت المقاعد",q0:"كيفاش نستافد من 150 درهمًا؟",a0:"1) حمّل النسخة التجريبية وثبّتها. 2) اختر مجلدًا وخلّي دليل يفهرسه. 3) ابحث عن أول كلمة. 4) صوّر شاشة النتائج وأرسلها على واتساب مع اسمك ومدينتك ورقم هاتفك. أول 50 محاميًا يكملون هاد الخطوات كيحتفظو بسعر 150 درهمًا في السنة مدى الحياة. التسجيل بوحدو ما كيكفيش.",nav1:"المزايا",nav2:"كيف يعمل",nav3:"أسئلة شائعة",dl:"تحميل",dl2:"حمّل نسخة 64 بت",dl32:"نسخة 32 بت",dlhint:"كل الملفات والتحقق من SHA-256",
+ar:{vid_t:"شاهد كيف تثبّت دليل وتستعمله",vid_play:"تشغيل الفيديو",vid_yt:"شاهده على يوتيوب",promo_cta:"كيف أصبح مستخدمًا نشطًا؟",promo_live:"العرض مفتوح",promo_t:"150 درهمًا في السنة بدل 300 — لأول 50 مستخدمًا نشطًا",promo_d:"العرض للمستخدمين النشطين فقط: ثبّت دليل، فهرس مجلدًا واحدًا على الأقل، وابحث عن أول كلمة خلال التجربة. التسجيل وحده لا يكفي.",promo_reg:"للتسجيل، تواصل معي:",seats_l:"مقعدًا مؤسسًا متبقيًا",promo_full:"اكتملت المقاعد",q0:"كيف أستفيد من 150 درهمًا؟",a0:"1) حمّل النسخة التجريبية وثبّتها. 2) اختر مجلدًا وخلّي دليل يفهرسه. 3) ابحث عن أول كلمة. 4) صوّر شاشة النتائج وأرسلها على واتساب مع اسمك ومدينتك ورقم هاتفك. أو سجّل عبر نموذج جوجل. أول 50 محاميًا يكملون هذه الخطوات يحتفظون بسعر 150 درهمًا في السنة مدى الحياة. التسجيل وحده لا يكفي.",nav1:"المزايا",nav2:"كيف يعمل",nav3:"أسئلة شائعة",dl:"تحميل",dl2:"حمّل النسخة التجريبية",dl32:"نسخة 32 بت",dlhint:"كل الملفات والتحقق من SHA-256",
 badge:"تجربة مجانية 14 يومًا",
 h1:"ابحث عن أي كلمة داخل كل ملفاتك.",
 lead:"دليل يفهرس ملفات Word وExcel وPDF على حاسوبك، فتكتب الكلمة وتظهر لك كل الملفات التي تحتوي عليها في ثوانٍ، بدون إنترنت. مصمّم للمحامين ومكاتب المحاماة.",
-meta:"ويندوز 10/11 · 64 و32 بت · بلا إنترنت · 150 درهمًا لأول 50 مستعملًا نشطًا",
+meta:"ويندوز 10/11 · 64 و32 بت · بلا إنترنت · 150 درهمًا لأول 50 مستخدمًا نشطًا",
 fh:"ما الذي يقدمه دليل",
 f1t:"بحث داخل الملفات",f1d:"يقرأ محتوى ملفات Word وExcel وPDF والنصوص وMarkdown، لا أسماء الملفات فقط.",
 f2t:"عربية مفهومة",f2d:"يتجاهل التشكيل والتطويل، ويوحّد أشكال الألف والياء والتاء المربوطة والأرقام الهندية.",
@@ -35,15 +35,16 @@ s3t:"اكتب كلمة",s3d:"تظهر كل الملفات التي تحتوي ع
 ph:"ملفاتك تبقى عندك.",
 pp:"يعمل دليل بدون اتصال. الفهرس قاعدة بيانات على حاسوبك، ولا يُرسل أي ملف أو كلمة بحث إلى أي خادم. مناسب للمحامين وكل من يتعامل مع ملفات حساسة.",
 qh:"أسئلة شائعة",
-q1:"شحال الثمن؟",a1:"التجربة مجانية 14 يومًا. السعر العادي 300 درهم في السنة، وأول 50 مستعملًا نشطًا عندهم 150 درهمًا في السنة، وهاد السعر كيبقى معاهم مدى الحياة ما دامو كيجددو بلا انقطاع. الدفع بتحويل بنكي، وكتوصلك الرخصة من بعد الأداء.",
+q1:"ما السعر؟",a1:"التجربة مجانية 14 يومًا. السعر العادي 300 درهم في السنة، وأول 50 مستخدمًا نشطًا عندهم 150 درهمًا في السنة، وهذا السعر يبقى معهم مدى الحياة ما داموا يجددون بلا انقطاع. الدفع بتحويل بنكي، وتوصلك الرخصة من بعد الأداء.",
 q2:"ظهر تحذير من ويندوز عند التثبيت، هل هذا طبيعي؟",a2:"نعم. التطبيق غير موقّع رقميًا بعد، لذلك يعرض SmartScreen تحذيرًا. اضغط «مزيد من المعلومات» ثم «تشغيل على أي حال».",
 q3:"هل يقرأ الملفات الممسوحة؟",a3:"بأفضل جهد، وبشرط تثبيت حزمة اللغة العربية في ويندوز. الملفات المحمية بكلمة مرور يُبحث عنها باسمها فقط.",
 q4:"هل يعمل على ماك أو الهاتف؟",a4:"لا، دليل لويندوز فقط حاليًا. لا يدعم PowerPoint.",
 q5:"هل يُرسل ملفاتي إلى الإنترنت؟",a5:"لا. الفهرس محلي بالكامل، والإنترنت يُستعمل فقط للتحقق من التحديثات.",
-q6:"شنو وقع من بعد 14 يوم؟",a6:"كيتوقف البرنامج حتى تجدد الرخصة: 150 درهمًا في السنة إذا كنت من أول 50 مستعملًا نشطًا، أو 300 درهمًا. ملفاتك ما كتتحذفش وما كتتبدلش.",
-fin:"ثبّت دليل اليوم",finp:"حمّله، فهرس مجلدًا، وابحث عن أول كلمة. وإذا بغيتي مساعدة، راسلني على واتساب.",
+q6:"ماذا يحدث بعد 14 يومًا؟",a6:"يتوقف البرنامج حتى تجدد الرخصة: 150 درهمًا في السنة إذا كنت من أول 50 مستخدمًا نشطًا، أو 300 درهمًا. ملفاتك لا تُحذف ولا تتبدل.",
+modalTitle:"اختر نسخة التثبيت",modalDesc:"اختر النسخة المناسبة لنظام ويندوز لديك:",dl64:"نسخة 64 بت",dl32:"نسخة 32 بت",modalNote:"معظم الأجهزة الحديثة تعمل بنسخة 64 بت.",register:"تسجيل",regForm:"نموذج التسجيل",
+fin:"ثبّت دليل اليوم",finp:"حمّله، فهرس مجلدًا، وابحث عن أول كلمة. وإذا احتجت مساعدة، راسلني على واتساب.",
 ftc:"تواصل مع المطوّر",rights:"جميع الحقوق محفوظة",made:"صُنع في خريبكة، المغرب"},
-fr:{vid_t:"Voyez comment installer et utiliser Dalil",vid_play:"Lire la vidéo",vid_yt:"Regarder sur YouTube",promo_cta:"Comment devenir utilisateur actif ?",promo_live:"Offre ouverte",promo_t:"150 DH/an au lieu de 300 — pour les 50 premiers utilisateurs actifs",promo_d:"Offre réservée aux utilisateurs actifs : installez Dalil, indexez au moins un dossier et lancez une première recherche pendant l’essai. Une simple inscription ne suffit pas.",promo_reg:"Pour vous inscrire, contactez-moi :",seats_l:"places fondateur restantes",promo_full:"Toutes les places sont prises",q0:"Comment obtenir le tarif de 150 DH ?",a0:"1) Installez la bêta. 2) Indexez au moins un dossier. 3) Lancez une première recherche. 4) Envoyez une capture des résultats sur WhatsApp avec votre nom, votre ville et votre téléphone. Les 50 premiers avocats à le faire gardent 150 DH/an à vie. L’inscription seule ne suffit pas.",nav1:"Fonctionnalités",nav2:"Fonctionnement",nav3:"FAQ",dl:"Télécharger",dl2:"Télécharger la version 64 bits",dl32:"Version 32 bits",dlhint:"Tous les fichiers et vérification SHA-256",
+fr:{vid_t:"Voyez comment installer et utiliser Dalil",vid_play:"Lire la vidéo",vid_yt:"Regarder sur YouTube",promo_cta:"Comment devenir utilisateur actif ?",promo_live:"Offre ouverte",promo_t:"150 DH/an au lieu de 300 — pour les 50 premiers utilisateurs actifs",promo_d:"Offre réservée aux utilisateurs actifs : installez Dalil, indexez au moins un dossier et lancez une première recherche pendant l’essai. Une simple inscription ne suffit pas.",promo_reg:"Pour vous inscrire, contactez-moi :",seats_l:"places fondateur restantes",promo_full:"Toutes les places sont prises",q0:"Comment obtenir le tarif de 150 DH ?",a0:"1) Installez la bêta. 2) Indexez au moins un dossier. 3) Lancez une première recherche. 4) Envoyez une capture des résultats sur WhatsApp avec votre nom, votre ville et votre téléphone. Ou inscrivez-vous via le formulaire Google. Les 50 premiers avocats à le faire gardent 150 DH/an à vie. L’inscription seule ne suffit pas.",nav1:"Fonctionnalités",nav2:"Fonctionnement",nav3:"FAQ",dl:"Télécharger",dl2:"Télécharger la version bêta",dl32:"Version 32 bits",dlhint:"Tous les fichiers et vérification SHA-256",
 badge:"Essai gratuit 14 jours",
 h1:"Retrouvez n’importe quel mot dans tous vos fichiers.",
 lead:"Dalil indexe vos documents Word, Excel et PDF. Tapez un mot et voyez en quelques secondes tous les fichiers qui le contiennent, sans connexion internet. Conçu pour les avocats et les cabinets.",
@@ -68,9 +69,10 @@ q3:"Lit-il les PDF numérisés ?",a3:"Au mieux, à condition d’installer le pa
 q4:"Existe-t-il sur Mac ou mobile ?",a4:"Non, Dalil fonctionne uniquement sous Windows pour l’instant. PowerPoint n’est pas pris en charge.",
 q5:"Mes fichiers sont-ils envoyés sur internet ?",a5:"Non. L’index est entièrement local. Internet sert uniquement à vérifier les mises à jour.",
 q6:"Que se passe-t-il après les 14 jours ?",a6:"Le logiciel s’arrête jusqu’au renouvellement : 150 DH/an pour les 50 premiers utilisateurs actifs, sinon 300 DH/an. Vos fichiers ne sont ni supprimés ni modifiés.",
+modalTitle:"Choisir la version d'installation",modalDesc:"Choisissez la version adaptée à votre Windows :",dl64:"Version 64 bits",dl32:"Version 32 bits",modalNote:"La plupart des appareils modernes utilisent la version 64 bits.",register:"S'inscrire",regForm:"Formulaire d'inscription",
 fin:"Installez Dalil aujourd’hui",finp:"Téléchargez, indexez un dossier, tapez votre premier mot. Besoin d’aide ? Écrivez-moi sur WhatsApp.",
 ftc:"Contacter le développeur",rights:"Tous droits réservés",made:"Fait à Khouribga, Maroc"},
-en:{vid_t:"Watch how to install and use Dalil",vid_play:"Play video",vid_yt:"Watch on YouTube",promo_cta:"How do I become an active user?",promo_live:"Offer open",promo_t:"150 MAD a year instead of 300 — for the first 50 active users",promo_d:"Active users only: install Dalil, index at least one folder and run your first search during the trial. Registering alone does not count.",promo_reg:"To register, contact me:",seats_l:"founding seats left",promo_full:"All seats are taken",q0:"How do I get the 150 MAD price?",a0:"1) Install the beta. 2) Index at least one folder. 3) Run your first search. 4) Send a screenshot of the results on WhatsApp with your name, city and phone. The first 50 lawyers to do this keep 150 MAD/year for life. Registering alone does not count.",nav1:"Features",nav2:"How it works",nav3:"FAQ",dl:"Download",dl2:"Download the 64-bit version",dl32:"32-bit version",dlhint:"All files and SHA-256 check",
+en:{vid_t:"Watch how to install and use Dalil",vid_play:"Play video",vid_yt:"Watch on YouTube",promo_cta:"How do I become an active user?",promo_live:"Offer open",promo_t:"150 MAD a year instead of 300 — for the first 50 active users",promo_d:"Active users only: install Dalil, index at least one folder and run your first search during the trial. Registering alone does not count.",promo_reg:"To register, contact me:",seats_l:"founding seats left",promo_full:"All seats are taken",q0:"How do I get the 150 MAD price?",a0:"1) Install the beta. 2) Index at least one folder. 3) Run your first search. 4) Send a screenshot of the results on WhatsApp with your name, city and phone. Or register via the Google Form. The first 50 lawyers to do this keep 150 MAD/year for life. Registering alone does not count.",nav1:"Features",nav2:"How it works",nav3:"FAQ",dl:"Download",dl2:"Download Beta",dl32:"32-bit version",dlhint:"All files and SHA-256 check",
 badge:"14-day free trial",
 h1:"Find any word inside all your files.",
 lead:"Dalil indexes your Word, Excel and PDF files. Type a word and see every file that contains it in seconds, with no internet connection. Built for lawyers and law firms.",
@@ -95,6 +97,7 @@ q3:"Does it read scanned PDFs?",a3:"On a best-effort basis, and only with the Wi
 q4:"Does it run on Mac or mobile?",a4:"No, Dalil is Windows-only for now. PowerPoint files are not supported.",
 q5:"Are my files sent over the internet?",a5:"No. The index is fully local. The internet is used only to check for updates.",
 q6:"What happens after 14 days?",a6:"The app stops until you renew: 150 MAD a year for the first 50 active users, otherwise 300 MAD. Your files are never deleted or modified.",
+modalTitle:"Choose Install Version",modalDesc:"Choose the version for your Windows:",dl64:"64-bit Version",dl32:"32-bit Version",modalNote:"Most modern devices use the 64-bit version.",register:"Register",regForm:"Registration Form",
 fin:"Install Dalil today",finp:"Download it, index a folder and type your first word. Need help? Message me on WhatsApp.",
 ftc:"Contact the Dev",rights:"All rights reserved",made:"Made in Khouribga, Morocco"}
 };
@@ -142,4 +145,14 @@ document.querySelectorAll("a[data-dl]").forEach(function(a){a.href=CONFIG.downlo
     f.allowFullscreen=true;
     v.innerHTML="";v.appendChild(f);
   });
+})();
+// Modal logic for beta install
+(function(){
+  var modal=document.getElementById("betaModal"),openBtn=document.getElementById("installBetaBtn"),closeBtn=document.getElementById("modalClose");
+  if(!modal||!openBtn||!closeBtn)return;
+  openBtn.addEventListener("click",function(){modal.hidden=false;document.body.style.overflow="hidden";closeBtn.focus()});
+  function closeModal(){modal.hidden=true;document.body.style.overflow=""}
+  closeBtn.addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){if(e.target===modal)closeModal()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!modal.hidden)closeModal()});
 })();

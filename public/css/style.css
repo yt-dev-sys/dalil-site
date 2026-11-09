@@ -130,3 +130,27 @@ footer{background:var(--navy);color:var(--on-navy);padding:38px 0 44px}
 .wa-fab svg{width:30px;height:30px}
 .wa-fab:hover{filter:brightness(1.06)}
 @media (max-width:760px){.wa-fab{width:52px;height:52px;inset-inline-end:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}}
+
+/* Register button in header */
+.register-btn{background:#0d1a33;color:#fff}
+.register-btn:hover{filter:brightness(1.2);color:#fff}
+
+/* Modal styles */
+.modal-overlay{position:fixed;inset:0;background:rgba(13,26,51,.7);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px;animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{background:var(--bg);border-radius:16px;padding:28px;max-width:420px;width:100%;box-shadow:0 24px 60px -20px rgba(13,26,51,.5);position:relative;animation:slideUp .3s ease}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;top:12px;inset-inline-end:12px;background:none;border:none;font-size:28px;color:var(--mute);cursor:pointer;line-height:1;padding:4px}
+.modal-close:hover{color:var(--ink)}
+.modal h3{margin:0 0 8px;font-size:22px;text-align:center}
+.modal p{margin:0 0 20px;color:var(--mute);text-align:center;font-size:15px}
+.modal-options{display:flex;flex-direction:column;gap:12px}
+.modal-option{text-align:center;text-decoration:none}
+.modal-option.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.modal-option.ghost:hover{border-color:var(--amber);color:var(--amber)}
+.modal-note{margin:16px 0 0;font-size:13px;color:var(--mute);text-align:center}
+
+@media (max-width:480px){
+  .modal{padding:20px}
+  .btn.sm{padding:6px 12px;font-size:13px}
+}

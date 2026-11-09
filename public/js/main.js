@@ -1,13 +1,16 @@
 /* ====== EDIT HERE ======
-   downloadUrl : link of the download button. Paste the exact pre-release URL if you want,
-                 e.g. https://github.com/yt-dev-sys/Dalil-Pub/releases/tag/v1.0.7
+   downloadUrl : release page, used by the header and footer buttons.
+                 e.g. https://github.com/yt-dev-sys/Dalil-Pub/releases/tag/V1.0.0
+   dl64 / dl32 : direct .exe files (no GitHub page in between).
+                 To ship a new build, upload the new exes under the SAME filenames
+                 in the same release; these two URLs then never change.
    seatsLeft   : seats remaining in the promo. Change this number any time.
    promoTotal  : total promo seats.
    videoId     : YouTube video id (the part after youtu.be/). */
 var CONFIG={
-  downloadUrl:"https://github.com/yt-dev-sys/Dalil-Pub/releases/tag/beta",
-  dl64:"https://github.com/yt-dev-sys/Dalil-Pub/releases/download/beta/Dalil-Beta-64bit.exe",
-  dl32:"https://github.com/yt-dev-sys/Dalil-Pub/releases/download/beta/Dalil-Beta-32bit.exe",
+  downloadUrl:"https://github.com/yt-dev-sys/Dalil-Pub/releases/tag/V1.0.0",
+  dl64:"https://github.com/yt-dev-sys/Dalil-Pub/releases/download/V1.0.0/Dalil-Beta-v1.0.7-64bit.exe",
+  dl32:"https://github.com/yt-dev-sys/Dalil-Pub/releases/download/V1.0.0/Dalil-Beta-v1.0.7-32bit.exe",
   promoTotal:50,
   seatsLeft:50,
   videoId:"apQj7ovwVSE"

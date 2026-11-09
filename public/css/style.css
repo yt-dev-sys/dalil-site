@@ -119,3 +119,14 @@ footer{background:var(--navy);color:var(--on-navy);padding:38px 0 44px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .vyt{text-align:center;margin:18px 0 0}
 .vyt a{font-weight:600;color:var(--amber-ink)}
+
+/* download row + sticky WhatsApp */
+.dl-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.dl-row.center{justify-content:center}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.btn.ghost:hover{border-color:var(--amber)}
+#dlall{font-weight:600;color:var(--amber-ink)}
+.wa-fab{position:fixed;inset-inline-end:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);z-index:30;text-decoration:none}
+.wa-fab svg{width:30px;height:30px}
+.wa-fab:hover{filter:brightness(1.06)}
+@media (max-width:760px){.wa-fab{width:52px;height:52px;inset-inline-end:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}}

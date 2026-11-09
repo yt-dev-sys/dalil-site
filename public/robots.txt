@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dalil.calvis-software.workers.dev/sitemap.xml

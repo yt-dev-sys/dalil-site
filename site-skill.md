@@ -26,9 +26,9 @@ This skill contains comprehensive documentation for the **Dalil** website - a la
 ```
 dalil-site/
 ├── public/
-│   ├── index.html          # Main landing page (150+ lines)
-│   ├── js/main.js          # Configuration, translations, interactions (160 lines)
-│   ├── css/style.css       # All styling (160 lines)
+│   ├── index.html          # Main landing page + modals
+│   ├── js/main.js          # Configuration, translations, form, interactions
+│   ├── css/style.css       # All styling
 │   ├── assets/
 │   │   ├── favicon.svg
 │   │   └── og-image.jpg    # Open Graph image (1200x630)
@@ -50,15 +50,16 @@ dalil-site/
 ### License Request Automation
 
 - Header / FAQ **"طلب رخصة"** button opens a form modal (no Google Forms, no account).
-- Fields: name, city, phone, email (optional), machine code (optional), screenshot of search results (required).
+- Fields: name, city, phone, email (optional), computer code (required, the code shown in the app's activation window), screenshot of search results (optional; used as proof of use for the founding offer).
 - The browser compresses the screenshot, `POST`s it to `/api/license-request`.
-- A Cloudflare Worker (`src/worker.js`) forwards it to the owner's **Telegram** chat as a photo with a caption containing all fields and a reference ID (`LR-…`).
+- A Cloudflare Worker (`src/worker.js`) forwards it to the owner's **Telegram** chat as a photo with a caption containing all fields and a reference ID (`LR-…`); if no screenshot is attached it sends a text message instead.
 - Telegram becomes the inbox/archive; the owner only has to issue the license.
+- Each message starts with "طلب رخصة جديد" and a tracking reference like `LR-MWBPBD7W-K6MV` (not a licence key, only for search/records).
 - Anti-spam: hidden honeypot field + minimum fill time. No database, no KV, no paid service.
 
 ### 1. Hero Section
 - Headline: "ابحث عن أي كلمة داخل كل ملفاتك"
-- Dual CTA: Single "Download Beta" button + "Register" button
+- Dual CTA: Single "Download Beta" button + "Request license" button
 - Live demo window showing search results
 - Meta badges: Windows 10/11, 64/32-bit, offline, pricing
 
@@ -91,7 +92,7 @@ dalil-site/
 
 ### 7. FAQ (7 Questions)
 All in `<details>` elements for progressive disclosure:
-- q0: How to get 150 MAD price (includes WhatsApp, Telegram, Google Form links)
+- q0: How to get 150 MAD price (includes WhatsApp, Telegram, built-in licence request form links)
 - q1: Pricing details
 - q2: Windows SmartScreen warning
 - q3: Scanned PDF support
@@ -104,7 +105,7 @@ All in `<details>` elements for progressive disclosure:
 - Navigation: Features, How it works, FAQ
 - Language switcher (AR/FR/EN)
 - **Download Beta** button (opens modal)
-- **Register** button (links to Google Form)
+- **Request license** button (opens the licence request form modal)
 
 ### 9. Footer
 - Developer contact: Telegram @Youssef_Touhami, WhatsApp +212 71 673 4889
@@ -119,6 +120,14 @@ All in `<details>` elements for progressive disclosure:
 - Shows 64-bit and 32-bit options
 - Uses direct `.exe` download links from GitHub Releases
 - Accessible: focus trap, ESC to close, click overlay to close
+
+### 12. License Request Modal
+- Triggered by the header "طلب رخصة" button and the FAQ button
+- Fields: name*, city*, phone*, email (optional), computer code*, screenshot (optional)
+- Computer code is required and validated as `XXXXXX-XXXXXX-XXXXXX-XXXXXX`
+- Screenshot is compressed in the browser and `POST`ed to `/api/license-request`
+- Success and error messages are translated in AR/FR/EN
+- No Google Form is used anywhere on the site
 
 ---
 
@@ -143,10 +152,11 @@ Three languages: `ar`, `fr`, `en`
 - Language persisted in `localStorage` (key: `dalil-lang`)
 - HTML `lang` and `dir` attributes updated on switch
 
-### Key Translation Keys Added Recently
-- `modalTitle`, `modalDesc`, `dl64`, `dl32`, `modalNote` - Modal content
-- `register` - Header register button
-- `regForm` - Google Form link in FAQ
+### Key Translation Keys
+- `licBtn`, `licTitle`, `licDesc` - Licence request button and modal
+- `fName`, `fCity`, `fPhone`, `fEmail`, `fMachine`, `fMachineHint`, `fShot` - Form labels and hint
+- `licNote`, `licSend`, `licSending`, `licOk`, `licErr`, `licSize`, `licType` - Form notes and status messages
+- `modalTitle`, `modalDesc`, `dl64`, `dl32`, `modalNote` - Install modal content
 - Updated `promo_cta`, `q0`, `a0`, `q1`, `q6` - Modern Standard Arabic (no Darija)
 
 ---
@@ -168,6 +178,9 @@ Dark mode via `prefers-color-scheme` and `[data-theme="dark"]`
 - `.btn` / `.btn.sm` / `.btn.ghost` - Button variants
 - `.dl-row` - Download button row
 - `.modal-overlay` / `.modal` - Modal styles with animations
+- `.modal-form` / `.field` / `.field-row` / `.form-status` - Licence request form
+- `.linkbtn` - Inline FAQ button that opens the request form
+- `.register-btn` - Dark header request-licence button
 - `.promo` / `.seats` / `.grid` - Promo section with animated seats
 - `.video` / `.vplay` - Video player
 - `.steps` - Numbered steps with CSS counters
@@ -207,28 +220,31 @@ Deploy: `npx wrangler deploy`
 
 ### License request endpoint
 `POST /api/license-request` (multipart/form-data) sends a Telegram `sendPhoto`
-(or `sendMessage` if no photo) with: name, city, phone, email, machine code,
-reference id and UTC time. Limits: 6 MB upload, required name/city/phone/photo.
+(or `sendMessage` if no photo) with: name, city, phone, email, computer code,
+reference id and UTC time. Limits: 6 MB upload, required name/city/phone and a
+computer code matching `XXXXXX-XXXXXX-XXXXXX-XXXXXX` (hex). The screenshot is
+optional and is marked in the message when absent.
 Honeypot field `website` and a minimum 1.5 s fill time block casual bots.
 If a real image is rejected by Telegram, the Worker falls back to a text-only
 message so the request is never lost.
 
 ### Cache Busting
-- CSS: `css/style.css?v=7`
-- JS: `js/main.js?v=6`
+- CSS: `css/style.css?v=9`
+- JS: `js/main.js?v=9`
 - Update version numbers when deploying changes
 
 ---
 
 ## Recent Changes (November 2026)
 
-1. **License request form**: Header/FAQ "طلب رخصة" button opens a modal form; submissions go to Telegram via `src/worker.js` (no Google Forms).
-2. **Single Download Button + Modal**: Hero now has one "حمّل النسخة التجريبية" button opening modal with 32/64-bit options
-3. **Header Register Button**: Added "تسجيل" button linking to Google Form (now replaced by the license request form)
-4. **Darija → MSA**: All Arabic text converted to Modern Standard Arabic
-5. **Removed Final CTA Section**: Deleted "ثبّت دليل اليوم" section
-6. **FAQ Updated**: Registration instructions now point to the built-in request form
-7. **Modal CSS Fix**: Added `.modal-overlay[hidden]{display:none}` to prevent auto-show
+1. **License request form**: Header/FAQ "طلب رخصة" button opens a modal; submissions go to Telegram via `src/worker.js`.
+2. **Computer code required**: Form and Worker validate `XXXXXX-XXXXXX-XXXXXX-XXXXXX` (the code from the app's activation window).
+3. **Screenshot optional**: Only needed as proof of use for the 150 MAD founding offer; the Telegram message notes when it is missing.
+4. **Google Form removed**: The old form link, its translation keys (`register`, `regForm`) and all documentation references were deleted.
+5. **Single Download Button + Modal**: Hero has one "حمّل النسخة التجريبية" button opening the 32/64-bit modal.
+6. **Darija → MSA**: All Arabic text converted to Modern Standard Arabic.
+7. **Removed Final CTA Section**: Deleted the "ثبّت دليل اليوم" section.
+8. **Modal CSS Fix**: Added `.modal-overlay[hidden]{display:none}` to prevent auto-show.
 
 ---
 
@@ -242,7 +258,6 @@ message so the request is never lost.
 | YouTube Demo | https://youtu.be/apQj7ovwVSE |
 | WhatsApp Contact | https://wa.me/212716734889 |
 | Telegram Contact | https://t.me/Youssef_Touhami |
-| Google Form (legacy, no longer linked from the site) | https://docs.google.com/forms/d/e/1FAIpQLSc23hgz-WKryP2RAHut_UvRahtfLkRhZNkRjN6MMHSfaRrrCg/viewform?usp=sharing&ouid=110932480476946993171 |
 
 ---
 

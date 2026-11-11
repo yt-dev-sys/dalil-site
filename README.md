@@ -21,29 +21,46 @@ dalil-site/
 ## Deploy on Cloudflare Workers
 
 The site is served by a Worker (`src/worker.js`) so it can also handle the
-license request endpoint. Deploy everything with:
+license request endpoint.
 
-```
-npx wrangler deploy
-```
+1. Log in once:
+   ```
+   npx wrangler login
+   ```
+2. Deploy the Worker:
+   ```
+   npx wrangler deploy
+   ```
+3. Add the two secrets (each command asks you to paste the value):
+   ```
+   npx wrangler secret put TELEGRAM_BOT_TOKEN
+   npx wrangler secret put TELEGRAM_CHAT_ID
+   ```
+4. Check they are listed (values stay hidden):
+   ```
+   npx wrangler secret list
+   ```
 
-If the repo is connected to Cloudflare, a push redeploys automatically.
-
-One-time secrets for the license form:
-```
-npx wrangler secret put TELEGRAM_BOT_TOKEN
-npx wrangler secret put TELEGRAM_CHAT_ID
-```
 Create the bot with @BotFather, send it `/start`, and get your numeric id from
-@userinfobot. For local testing, copy `.dev.vars.example` to `.dev.vars`.
+@userinfobot. Secrets are stored by Cloudflare and never go into the repo.
+Dashboard alternative: Workers & Pages → `dalil` → Settings → Variables and
+Secrets → add both as **Secret** → Deploy.
 
-## License request form (free, no Google Forms)
+For local testing, copy `.dev.vars.example` to `.dev.vars` and fill the same two
+values, then run `npx wrangler dev`.
+
+If the repo is connected to Cloudflare, a push redeploys automatically. Secrets
+do not need to be set again after each deploy.
+
+## License request form (free)
 
 - The **"طلب رخصة"** button in the header and FAQ opens a modal form.
-- Fields: name, city, phone, email (optional), machine code (optional), and a
-  screenshot of the search results (required).
+- Fields: name, city, phone, email (optional), **computer code** (required,
+  format `1A2B3C-4D5E6F-7A8B9C-0D1E2F`), and an optional screenshot of the
+  search results (used as proof of use for the founding offer).
 - `POST /api/license-request` is handled by `src/worker.js`, which sends the
-  request to your Telegram as a photo plus caption (reference id `LR-…`).
+  request to your Telegram as a photo plus caption (reference id `LR-…`), or as
+  a text message when no screenshot is attached.
 - Telegram is the inbox and the archive; you only issue the license.
 - No database and no paid service. Anti-spam is a honeypot + 1.5 s minimum
   fill time. Screenshots are compressed in the browser before upload.

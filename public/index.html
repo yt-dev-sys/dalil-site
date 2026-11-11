@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0d1a33">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css?v=8">
+<link rel="stylesheet" href="css/style.css?v=9">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Dalil","alternateName":"دليل","url":"https://dalil.calvis-software.workers.dev/","applicationCategory":"BusinessApplication","operatingSystem":"Windows 10, Windows 11","inLanguage":["ar","fr","en"],"description":"بحث داخل محتوى ملفات Word وExcel وPDF بالعربية، بدون إنترنت.","areaServed":"MA","offers":{"@type":"Offer","price":"150","priceCurrency":"MAD"},"author":{"@type":"Person","name":"Youssef Touhami"}}
 </script>
@@ -139,7 +139,7 @@
   <div class="modal modal-form">
     <button class="modal-close" id="licClose" aria-label="إغلاق">&times;</button>
     <h3 id="licTitle" data-i="licTitle">طلب رخصة</h3>
-    <p data-i="licDesc">املأ المعلومات وأرفق صورة لشاشة نتائج البحث. ستصلك الرخصة بعد التحقق.</p>
+    <p data-i="licDesc">املأ المعلومات. يمكنك إرفاق صورة لشاشة نتائج البحث (مطلوبة لعرض 150 درهمًا). ستصلك الرخصة بعد التحقق.</p>
     <form id="licForm" action="/api/license-request" method="post" enctype="multipart/form-data">
       <input type="hidden" name="website" value="" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
       <input type="hidden" name="ts" id="licTs" value="">
@@ -149,9 +149,9 @@
         <label class="field"><span data-i="fPhone">الهاتف *</span><input name="phone" required maxlength="30" inputmode="tel" dir="ltr" autocomplete="tel"></label>
       </div>
       <label class="field"><span data-i="fEmail">البريد الإلكتروني (اختياري)</span><input type="email" name="email" maxlength="120" inputmode="email" dir="ltr" autocomplete="email"></label>
-      <label class="field"><span data-i="fMachine">رمز الجهاز إن ظهر في البرنامج (اختياري)</span><input name="machine" maxlength="80" dir="ltr"></label>
-      <label class="field"><span data-i="fShot">صورة لشاشة نتائج البحث *</span><input type="file" name="screenshot" accept="image/*" required></label>
-      <p class="modal-note" data-i="licNote">تُرسل الصورة فقط للتحقق من أنك مستخدم نشط. لا تُرسل أي ملفات أخرى.</p>
+      <label class="field"><span data-i="fMachine">رمز الحاسوب (من نافذة التفعيل) *</span><input name="machine" required maxlength="27" dir="ltr" placeholder="1A2B3C-4D5E6F-7A8B9C-0D1E2F" pattern="[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}-[0-9A-Fa-f]{6}" autocomplete="off" spellcheck="false"><small data-i="fMachineHint">أربع مجموعات من 6 أحرف: 1A2B3C-4D5E6F-7A8B9C-0D1E2F</small></label>
+      <label class="field"><span data-i="fShot">صورة لشاشة نتائج البحث (اختيارية — مطلوبة لعرض 150 درهمًا)</span><input type="file" name="screenshot" accept="image/*"></label>
+      <p class="modal-note" data-i="licNote">الصورة اختيارية، وتُطلب فقط للتحقق من الاستخدام الفعلي للحصول على عرض 150 درهمًا. لا تُرسل أي ملفات أخرى.</p>
       <button class="btn form-submit" type="submit" data-i="licSend">إرسال الطلب</button>
       <p class="form-status" id="licStatus" role="status" aria-live="polite"></p>
     </form>
@@ -171,6 +171,6 @@
   <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48s1.06 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.48-8.41"/></svg>
 </a>
 
-<script src="js/main.js?v=7" defer></script>
+<script src="js/main.js?v=9" defer></script>
 </body>
 </html>

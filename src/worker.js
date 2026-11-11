@@ -57,18 +57,18 @@ async function handleLicenseRequest(request, env) {
   const city = clean(form.get("city"), 60);
   const phone = clean(form.get("phone"), 30);
   const email = clean(form.get("email"), 120);
-  const machine = clean(form.get("machine"), 80);
+  const machine = String(form.get("machine") || "").replace(/\s+/g, "").toUpperCase().slice(0, 27);
 
-  if (!name || !city || !phone) return json({ error: "missing_fields" }, 400);
+  if (!name || !city || !phone || !machine) return json({ error: "missing_fields" }, 400);
+  if (!/^[0-9A-F]{6}(-[0-9A-F]{6}){3}$/.test(machine)) return json({ error: "bad_machine" }, 400);
 
   const shot = form.get("screenshot");
   const hasPhoto = shot && typeof shot === "object" && typeof shot.size === "number" && shot.size > 0;
 
-  if (!hasPhoto) return json({ error: "missing_photo" }, 400);
-  if (!String(shot.type || "").startsWith("image/")) {
+  if (hasPhoto && !String(shot.type || "").startsWith("image/")) {
     return json({ error: "bad_file_type" }, 400);
   }
-  if (shot.size > MAX_UPLOAD) return json({ error: "too_large" }, 413);
+  if (hasPhoto && shot.size > MAX_UPLOAD) return json({ error: "too_large" }, 413);
 
   const id = "LR-" + Date.now().toString(36).toUpperCase() + "-" + Math.random().toString(36).slice(2, 6).toUpperCase();
   const lines = [
@@ -80,8 +80,9 @@ async function handleLicenseRequest(request, env) {
     "الهاتف: " + esc(phone),
   ];
   if (email) lines.push("البريد: " + esc(email));
-  if (machine) lines.push("رمز الجهاز: " + esc(machine));
+  lines.push("رمز الحاسوب: " + esc(machine));
   lines.push("الوقت: " + new Date().toISOString().replace("T", " ").slice(0, 16) + " UTC");
+  if (!hasPhoto) lines.push("", "الصورة: غير مرفقة (اختياري)");
 
   const caption = lines.join("\n").slice(0, MAX_CAPTION);
   const api = "https://api.telegram.org/bot" + env.TELEGRAM_BOT_TOKEN + "/";
@@ -110,7 +111,7 @@ async function handleLicenseRequest(request, env) {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           chat_id: env.TELEGRAM_CHAT_ID,
-          text: caption + "\n\n⚠️ تعذّر إرفاق صورة الشاشة",
+          text: caption + (hasPhoto ? "\n\n⚠️ تعذّر إرفاق صورة الشاشة" : ""),
           parse_mode: "HTML",
           disable_web_page_preview: true,
         }),

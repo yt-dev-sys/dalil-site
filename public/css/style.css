@@ -158,6 +158,8 @@ footer{background:var(--navy);color:var(--on-navy);padding:38px 0 44px}
 .modal-form form{display:flex;flex-direction:column;gap:14px;margin-top:18px}
 .field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--ink)}
 .field span{color:var(--mute)}
+.field small{font-weight:400;font-size:12px;color:var(--mute);line-height:1.4}
+#licForm input[name="machine"]{text-transform:uppercase;letter-spacing:.5px}
 .field input{width:100%;background:var(--bg2);color:var(--ink);border:1.5px solid var(--line);border-radius:9px;padding:10px 12px;font:inherit;font-size:16px}
 .field input:focus{outline:none;border-color:var(--amber)}
 .field input[type=file]{padding:8px;font-size:14px;background:transparent}

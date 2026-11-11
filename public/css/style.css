@@ -151,6 +151,27 @@ footer{background:var(--navy);color:var(--on-navy);padding:38px 0 44px}
 .modal-option.ghost:hover{border-color:var(--amber);color:var(--amber)}
 .modal-note{margin:16px 0 0;font-size:13px;color:var(--mute);text-align:center}
 
+/* Licence request form */
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--amber-ink);font-weight:600;cursor:pointer;text-decoration:underline}
+.modal-form{max-width:520px;text-align:start;max-height:calc(100vh - 40px);overflow:auto}
+.modal-form h3,.modal-form>p{text-align:center}
+.modal-form form{display:flex;flex-direction:column;gap:14px;margin-top:18px}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--ink)}
+.field span{color:var(--mute)}
+.field input{width:100%;background:var(--bg2);color:var(--ink);border:1.5px solid var(--line);border-radius:9px;padding:10px 12px;font:inherit;font-size:16px}
+.field input:focus{outline:none;border-color:var(--amber)}
+.field input[type=file]{padding:8px;font-size:14px;background:transparent}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form-submit{width:100%;margin-top:4px;border:0;cursor:pointer}
+.form-submit:disabled{opacity:.6;cursor:wait}
+.form-status{margin:0;min-height:1.4em;text-align:center;font-size:14px;font-weight:600}
+.form-status.ok{color:#1a7f4b}
+.form-status.err{color:#c0392b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .form-status.ok{color:#3ddc84}}
+:root[data-theme="dark"] .form-status.ok{color:#3ddc84}
+@media (max-width:480px){.field-row{grid-template-columns:1fr}}
+
 @media (max-width:480px){
   .modal{padding:20px}
   .btn.sm{padding:6px 12px;font-size:13px}

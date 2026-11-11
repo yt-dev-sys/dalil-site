@@ -5,30 +5,48 @@ Static site (no build step). Everything to deploy is inside `public/`.
 ```
 dalil-site/
 ├── README.md
-├── wrangler.jsonc     (Cloudflare Worker config: serves ./public)
+├── wrangler.jsonc     (Cloudflare Worker config: serves ./public + /api)
+├── src/worker.js      (license request -> Telegram)
+├── .dev.vars.example  (local Telegram secrets template)
 ├── .gitignore
-├── wrangler.jsonc     (Cloudflare: Worker name + assets folder)
-├── .gitignore
-└── public/            <- deploy this folder
+└── public/            <- static site
     ├── index.html
     ├── css/style.css
-    ├── js/main.js     (AR / FR / EN texts + language switcher)
+    ├── js/main.js     (AR / FR / EN texts + language switcher + request form)
     ├── assets/favicon.svg
     ├── _headers       (Cloudflare security + cache headers)
     └── robots.txt
 ```
 
-## Deploy on Cloudflare Pages
+## Deploy on Cloudflare Workers
 
-**Dashboard (Git or upload):**
-- Framework preset: `None`
-- Build command: leave empty
-- Build output directory: `public`
+The site is served by a Worker (`src/worker.js`) so it can also handle the
+license request endpoint. Deploy everything with:
 
-**Direct upload from the terminal:**
 ```
-npx wrangler pages deploy public --project-name dalil
+npx wrangler deploy
 ```
+
+If the repo is connected to Cloudflare, a push redeploys automatically.
+
+One-time secrets for the license form:
+```
+npx wrangler secret put TELEGRAM_BOT_TOKEN
+npx wrangler secret put TELEGRAM_CHAT_ID
+```
+Create the bot with @BotFather, send it `/start`, and get your numeric id from
+@userinfobot. For local testing, copy `.dev.vars.example` to `.dev.vars`.
+
+## License request form (free, no Google Forms)
+
+- The **"طلب رخصة"** button in the header and FAQ opens a modal form.
+- Fields: name, city, phone, email (optional), machine code (optional), and a
+  screenshot of the search results (required).
+- `POST /api/license-request` is handled by `src/worker.js`, which sends the
+  request to your Telegram as a photo plus caption (reference id `LR-…`).
+- Telegram is the inbox and the archive; you only issue the license.
+- No database and no paid service. Anti-spam is a honeypot + 1.5 s minimum
+  fill time. Screenshots are compressed in the browser before upload.
 
 ## Edit
 - Texts and translations: `public/js/main.js` (the `T` object). The Arabic text is also written in `index.html` so search engines see it.

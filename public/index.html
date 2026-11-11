@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0d1a33">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css?v=7">
+<link rel="stylesheet" href="css/style.css?v=8">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Dalil","alternateName":"دليل","url":"https://dalil.calvis-software.workers.dev/","applicationCategory":"BusinessApplication","operatingSystem":"Windows 10, Windows 11","inLanguage":["ar","fr","en"],"description":"بحث داخل محتوى ملفات Word وExcel وPDF بالعربية، بدون إنترنت.","areaServed":"MA","offers":{"@type":"Offer","price":"150","priceCurrency":"MAD"},"author":{"@type":"Person","name":"Youssef Touhami"}}
 </script>
@@ -36,7 +36,7 @@
     <button data-l="ar">AR</button><button data-l="fr">FR</button><button data-l="en">EN</button>
   </div>
   <a class="btn sm" id="dlBtn" data-i="dl">تحميل النسخة التجريبية</a>
-  <a class="btn sm register-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc23hgz-WKryP2RAHut_UvRahtfLkRhZNkRjN6MMHSfaRrrCg/viewform?usp=sharing&ouid=110932480476946993171" target="_blank" rel="noopener" data-i="register">تسجيل</a>
+  <button type="button" class="btn sm register-btn" id="licBtn" data-i="licBtn">طلب رخصة</button>
 </div></header>
 
 <main id="top">
@@ -109,7 +109,7 @@
 
 <section id="faq"><div class="wrap">
   <h2 data-i="qh">أسئلة شائعة</h2>
-  <details open><summary data-i="q0">كيف أستفيد من 150 درهمًا؟</summary><p data-i="a0">1) حمّل النسخة التجريبية وثبّتها. 2) اختر مجلدًا وخلّي دليل يفهرسه. 3) ابحث عن أول كلمة. 4) صوّر شاشة النتائج وأرسلها على واتساب مع اسمك ومدينتك ورقم هاتفك. أو سجّل عبر نموذج جوجل. أول 50 محاميًا يكملون هذه الخطوات يحتفظون بسعر 150 درهمًا في السنة مدى الحياة. التسجيل وحده لا يكفي.</p><p class="reg"><a href="https://wa.me/212716734889?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AB%D8%A8%D9%91%D8%AA%D8%AA%20%D8%AF%D9%84%D9%8A%D9%84%D8%8C%20%D8%AF%D8%B1%D8%AA%20%D8%A7%D9%84%D9%81%D9%87%D8%B1%D8%B3%D8%A9%20%D8%B9%D9%84%D9%89%20%D9%85%D8%AC%D9%84%D8%AF%D8%8C%20%D9%88%D8%A8%D8%AD%D8%AB%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A3%D9%88%D9%84%20%D9%83%D9%84%D9%85%D8%A9.%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%83%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%86%D8%B4%D8%B7.%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%0A%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81%3A" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/Youssef_Touhami" target="_blank" rel="noopener">Telegram</a><a href="https://docs.google.com/forms/d/e/1FAIpQLSc23hgz-WKryP2RAHut_UvRahtfLkRhZNkRjN6MMHSfaRrrCg/viewform?usp=sharing&ouid=110932480476946993171" target="_blank" rel="noopener" data-i="regForm">نموذج التسجيل</a></p></details>
+  <details open><summary data-i="q0">كيف أستفيد من 150 درهمًا؟</summary><p data-i="a0">1) حمّل النسخة التجريبية وثبّتها. 2) اختر مجلدًا وخلّي دليل يفهرسه. 3) ابحث عن أول كلمة. 4) صوّر شاشة النتائج وأرسلها على واتساب مع اسمك ومدينتك ورقم هاتفك. أو أرسل الطلب من زر «طلب رخصة». أول 50 محاميًا يكملون هذه الخطوات يحتفظون بسعر 150 درهمًا في السنة مدى الحياة. التسجيل وحده لا يكفي.</p><p class="reg"><a href="https://wa.me/212716734889?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AB%D8%A8%D9%91%D8%AA%D8%AA%20%D8%AF%D9%84%D9%8A%D9%84%D8%8C%20%D8%AF%D8%B1%D8%AA%20%D8%A7%D9%84%D9%81%D9%87%D8%B1%D8%B3%D8%A9%20%D8%B9%D9%84%D9%89%20%D9%85%D8%AC%D9%84%D8%AF%D8%8C%20%D9%88%D8%A8%D8%AD%D8%AB%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A3%D9%88%D9%84%20%D9%83%D9%84%D9%85%D8%A9.%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AC%D9%84%20%D9%83%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%86%D8%B4%D8%B7.%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%0A%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81%3A" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/Youssef_Touhami" target="_blank" rel="noopener">Telegram</a><button type="button" class="linkbtn" data-lic data-i="licBtn">طلب رخصة</button></p></details>
   <details><summary data-i="q1">شحال الثمن؟</summary><p data-i="a1">التجربة مجانية 14 يومًا. السعر العادي 300 درهم في السنة، وأول 50 مستعملًا نشطًا عندهم 150 درهمًا في السنة، وهاد السعر كيبقى معاهم مدى الحياة ما دامو كيجددو بلا انقطاع. الدفع بتحويل بنكي، وكتوصلك الرخصة من بعد الأداء.</p></details>
   <details><summary data-i="q2">ظهر تحذير من ويندوز عند التثبيت، هل هذا طبيعي؟</summary><p data-i="a2">نعم. التطبيق غير موقّع رقميًا بعد، لذلك يعرض SmartScreen تحذيرًا. اضغط «مزيد من المعلومات» ثم «تشغيل على أي حال».</p></details>
   <details><summary data-i="q3">هل يقرأ الملفات الممسوحة؟</summary><p data-i="a3">بأفضل جهد، وبشرط تثبيت حزمة اللغة العربية في ويندوز. الملفات المحمية بكلمة مرور يُبحث عنها باسمها فقط.</p></details>
@@ -134,6 +134,30 @@
   </div>
 </div>
 
+<!-- Licence request modal -->
+<div class="modal-overlay" id="licModal" role="dialog" aria-modal="true" aria-labelledby="licTitle" hidden>
+  <div class="modal modal-form">
+    <button class="modal-close" id="licClose" aria-label="إغلاق">&times;</button>
+    <h3 id="licTitle" data-i="licTitle">طلب رخصة</h3>
+    <p data-i="licDesc">املأ المعلومات وأرفق صورة لشاشة نتائج البحث. ستصلك الرخصة بعد التحقق.</p>
+    <form id="licForm" action="/api/license-request" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="website" value="" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <input type="hidden" name="ts" id="licTs" value="">
+      <label class="field"><span data-i="fName">الاسم الكامل *</span><input name="name" required maxlength="80" autocomplete="name"></label>
+      <div class="field-row">
+        <label class="field"><span data-i="fCity">المدينة *</span><input name="city" required maxlength="60"></label>
+        <label class="field"><span data-i="fPhone">الهاتف *</span><input name="phone" required maxlength="30" inputmode="tel" dir="ltr" autocomplete="tel"></label>
+      </div>
+      <label class="field"><span data-i="fEmail">البريد الإلكتروني (اختياري)</span><input type="email" name="email" maxlength="120" inputmode="email" dir="ltr" autocomplete="email"></label>
+      <label class="field"><span data-i="fMachine">رمز الجهاز إن ظهر في البرنامج (اختياري)</span><input name="machine" maxlength="80" dir="ltr"></label>
+      <label class="field"><span data-i="fShot">صورة لشاشة نتائج البحث *</span><input type="file" name="screenshot" accept="image/*" required></label>
+      <p class="modal-note" data-i="licNote">تُرسل الصورة فقط للتحقق من أنك مستخدم نشط. لا تُرسل أي ملفات أخرى.</p>
+      <button class="btn form-submit" type="submit" data-i="licSend">إرسال الطلب</button>
+      <p class="form-status" id="licStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
 <footer><div class="wrap ft">
   <div>
     <h4 data-i="ftc">تواصل مع المطوّر</h4>
@@ -147,6 +171,6 @@
   <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48s1.06 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.48-8.41"/></svg>
 </a>
 
-<script src="js/main.js?v=6" defer></script>
+<script src="js/main.js?v=7" defer></script>
 </body>
 </html>

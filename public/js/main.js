@@ -16,7 +16,7 @@ var CONFIG={
   videoId:"apQj7ovwVSE"
 };
 var T={
-ar:{vid_t:"شاهد كيف تثبّت دليل وتستعمله",vid_play:"تشغيل الفيديو",vid_yt:"شاهده على يوتيوب",promo_cta:"كيف أصبح مستخدمًا نشطًا؟",promo_live:"العرض مفتوح",promo_t:"150 درهمًا في السنة بدل 300 — لأول 50 مستخدمًا نشطًا",promo_d:"العرض للمستخدمين النشطين فقط: ثبّت دليل، فهرس مجلدًا واحدًا على الأقل، وابحث عن أول كلمة خلال التجربة. التسجيل وحده لا يكفي.",promo_reg:"للتسجيل، تواصل معي:",seats_l:"مقعدًا مؤسسًا متبقيًا",promo_full:"اكتملت المقاعد",q0:"كيف أستفيد من 150 درهمًا؟",a0:"1) حمّل النسخة التجريبية وثبّتها. 2) اختر مجلدًا وخلّي دليل يفهرسه. 3) ابحث عن أول كلمة. 4) صوّر شاشة النتائج وأرسلها على واتساب مع اسمك ومدينتك ورقم هاتفك. أو سجّل عبر نموذج جوجل. أول 50 محاميًا يكملون هذه الخطوات يحتفظون بسعر 150 درهمًا في السنة مدى الحياة. التسجيل وحده لا يكفي.",nav1:"المزايا",nav2:"كيف يعمل",nav3:"أسئلة شائعة",dl:"تحميل",dl2:"حمّل النسخة التجريبية",dl32:"نسخة 32 بت",dlhint:"كل الملفات والتحقق من SHA-256",
+ar:{vid_t:"شاهد كيف تثبّت دليل وتستعمله",vid_play:"تشغيل الفيديو",vid_yt:"شاهده على يوتيوب",promo_cta:"كيف أصبح مستخدمًا نشطًا؟",promo_live:"العرض مفتوح",promo_t:"150 درهمًا في السنة بدل 300 — لأول 50 مستخدمًا نشطًا",promo_d:"العرض للمستخدمين النشطين فقط: ثبّت دليل، فهرس مجلدًا واحدًا على الأقل، وابحث عن أول كلمة خلال التجربة. التسجيل وحده لا يكفي.",promo_reg:"للتسجيل، تواصل معي:",seats_l:"مقعدًا مؤسسًا متبقيًا",promo_full:"اكتملت المقاعد",q0:"كيف أستفيد من 150 درهمًا؟",a0:"1) حمّل النسخة التجريبية وثبّتها. 2) اختر مجلدًا وخلّي دليل يفهرسه. 3) ابحث عن أول كلمة. 4) صوّر شاشة النتائج وأرسلها على واتساب مع اسمك ومدينتك ورقم هاتفك. أو أرسل الطلب من زر «طلب رخصة». أول 50 محاميًا يكملون هذه الخطوات يحتفظون بسعر 150 درهمًا في السنة مدى الحياة. التسجيل وحده لا يكفي.",nav1:"المزايا",nav2:"كيف يعمل",nav3:"أسئلة شائعة",dl:"تحميل",dl2:"حمّل النسخة التجريبية",dl32:"نسخة 32 بت",dlhint:"كل الملفات والتحقق من SHA-256",
 badge:"تجربة مجانية 14 يومًا",
 h1:"ابحث عن أي كلمة داخل كل ملفاتك.",
 lead:"دليل يفهرس ملفات Word وExcel وPDF على حاسوبك، فتكتب الكلمة وتظهر لك كل الملفات التي تحتوي عليها في ثوانٍ، بدون إنترنت. مصمّم للمحامين ومكاتب المحاماة.",
@@ -43,8 +43,8 @@ q5:"هل يُرسل ملفاتي إلى الإنترنت؟",a5:"لا. الفهر
 q6:"ماذا يحدث بعد 14 يومًا؟",a6:"يتوقف البرنامج حتى تجدد الرخصة: 150 درهمًا في السنة إذا كنت من أول 50 مستخدمًا نشطًا، أو 300 درهمًا. ملفاتك لا تُحذف ولا تتبدل.",
 modalTitle:"اختر نسخة التثبيت",modalDesc:"اختر النسخة المناسبة لنظام ويندوز لديك:",dl64:"نسخة 64 بت",dl32:"نسخة 32 بت",modalNote:"معظم الأجهزة الحديثة تعمل بنسخة 64 بت.",register:"تسجيل",regForm:"نموذج التسجيل",
 fin:"ثبّت دليل اليوم",finp:"حمّله، فهرس مجلدًا، وابحث عن أول كلمة. وإذا احتجت مساعدة، راسلني على واتساب.",
-ftc:"تواصل مع المطوّر",rights:"جميع الحقوق محفوظة",made:"صُنع في خريبكة، المغرب"},
-fr:{vid_t:"Voyez comment installer et utiliser Dalil",vid_play:"Lire la vidéo",vid_yt:"Regarder sur YouTube",promo_cta:"Comment devenir utilisateur actif ?",promo_live:"Offre ouverte",promo_t:"150 DH/an au lieu de 300 — pour les 50 premiers utilisateurs actifs",promo_d:"Offre réservée aux utilisateurs actifs : installez Dalil, indexez au moins un dossier et lancez une première recherche pendant l’essai. Une simple inscription ne suffit pas.",promo_reg:"Pour vous inscrire, contactez-moi :",seats_l:"places fondateur restantes",promo_full:"Toutes les places sont prises",q0:"Comment obtenir le tarif de 150 DH ?",a0:"1) Installez la bêta. 2) Indexez au moins un dossier. 3) Lancez une première recherche. 4) Envoyez une capture des résultats sur WhatsApp avec votre nom, votre ville et votre téléphone. Ou inscrivez-vous via le formulaire Google. Les 50 premiers avocats à le faire gardent 150 DH/an à vie. L’inscription seule ne suffit pas.",nav1:"Fonctionnalités",nav2:"Fonctionnement",nav3:"FAQ",dl:"Télécharger",dl2:"Télécharger la version bêta",dl32:"Version 32 bits",dlhint:"Tous les fichiers et vérification SHA-256",
+ftc:"تواصل مع المطوّر",rights:"جميع الحقوق محفوظة",made:"صُنع في خريبكة، المغرب",licBtn:"طلب رخصة",licTitle:"طلب رخصة",licDesc:"املأ المعلومات وأرفق صورة لشاشة نتائج البحث. ستصلك الرخصة بعد التحقق.",fName:"الاسم الكامل *",fCity:"المدينة *",fPhone:"الهاتف *",fEmail:"البريد الإلكتروني (اختياري)",fMachine:"رمز الجهاز إن ظهر في البرنامج (اختياري)",fShot:"صورة لشاشة نتائج البحث *",licNote:"تُرسل الصورة فقط للتحقق من أنك مستخدم نشط. لا تُرسل أي ملفات أخرى.",licSend:"إرسال الطلب",licSending:"جارٍ الإرسال…",licOk:"تم استلام طلبك. سأراسلك بعد التحقق.",licErr:"تعذّر الإرسال. حاول مرة أخرى أو راسلني على واتساب.",licSize:"الصورة كبيرة جدًا (الحد 10 ميغابايت).",licType:"اختر ملف صورة."},
+fr:{vid_t:"Voyez comment installer et utiliser Dalil",vid_play:"Lire la vidéo",vid_yt:"Regarder sur YouTube",promo_cta:"Comment devenir utilisateur actif ?",promo_live:"Offre ouverte",promo_t:"150 DH/an au lieu de 300 — pour les 50 premiers utilisateurs actifs",promo_d:"Offre réservée aux utilisateurs actifs : installez Dalil, indexez au moins un dossier et lancez une première recherche pendant l’essai. Une simple inscription ne suffit pas.",promo_reg:"Pour vous inscrire, contactez-moi :",seats_l:"places fondateur restantes",promo_full:"Toutes les places sont prises",q0:"Comment obtenir le tarif de 150 DH ?",a0:"1) Installez la bêta. 2) Indexez au moins un dossier. 3) Lancez une première recherche. 4) Envoyez une capture des résultats sur WhatsApp avec votre nom, votre ville et votre téléphone. Ou envoyez la demande via le bouton « Demander une licence ». Les 50 premiers avocats à le faire gardent 150 DH/an à vie. L’inscription seule ne suffit pas.",nav1:"Fonctionnalités",nav2:"Fonctionnement",nav3:"FAQ",dl:"Télécharger",dl2:"Télécharger la version bêta",dl32:"Version 32 bits",dlhint:"Tous les fichiers et vérification SHA-256",
 badge:"Essai gratuit 14 jours",
 h1:"Retrouvez n’importe quel mot dans tous vos fichiers.",
 lead:"Dalil indexe vos documents Word, Excel et PDF. Tapez un mot et voyez en quelques secondes tous les fichiers qui le contiennent, sans connexion internet. Conçu pour les avocats et les cabinets.",
@@ -71,8 +71,8 @@ q5:"Mes fichiers sont-ils envoyés sur internet ?",a5:"Non. L’index est entiè
 q6:"Que se passe-t-il après les 14 jours ?",a6:"Le logiciel s’arrête jusqu’au renouvellement : 150 DH/an pour les 50 premiers utilisateurs actifs, sinon 300 DH/an. Vos fichiers ne sont ni supprimés ni modifiés.",
 modalTitle:"Choisir la version d'installation",modalDesc:"Choisissez la version adaptée à votre Windows :",dl64:"Version 64 bits",dl32:"Version 32 bits",modalNote:"La plupart des appareils modernes utilisent la version 64 bits.",register:"S'inscrire",regForm:"Formulaire d'inscription",
 fin:"Installez Dalil aujourd’hui",finp:"Téléchargez, indexez un dossier, tapez votre premier mot. Besoin d’aide ? Écrivez-moi sur WhatsApp.",
-ftc:"Contacter le développeur",rights:"Tous droits réservés",made:"Fait à Khouribga, Maroc"},
-en:{vid_t:"Watch how to install and use Dalil",vid_play:"Play video",vid_yt:"Watch on YouTube",promo_cta:"How do I become an active user?",promo_live:"Offer open",promo_t:"150 MAD a year instead of 300 — for the first 50 active users",promo_d:"Active users only: install Dalil, index at least one folder and run your first search during the trial. Registering alone does not count.",promo_reg:"To register, contact me:",seats_l:"founding seats left",promo_full:"All seats are taken",q0:"How do I get the 150 MAD price?",a0:"1) Install the beta. 2) Index at least one folder. 3) Run your first search. 4) Send a screenshot of the results on WhatsApp with your name, city and phone. Or register via the Google Form. The first 50 lawyers to do this keep 150 MAD/year for life. Registering alone does not count.",nav1:"Features",nav2:"How it works",nav3:"FAQ",dl:"Download",dl2:"Download Beta",dl32:"32-bit version",dlhint:"All files and SHA-256 check",
+ftc:"Contacter le développeur",rights:"Tous droits réservés",made:"Fait à Khouribga, Maroc",licBtn:"Demander une licence",licTitle:"Demande de licence",licDesc:"Remplissez les informations et joignez une capture des résultats de recherche. La licence vous sera envoyée après vérification.",fName:"Nom complet *",fCity:"Ville *",fPhone:"Téléphone *",fEmail:"E-mail (facultatif)",fMachine:"Code machine s'il est affiché (facultatif)",fShot:"Capture des résultats de recherche *",licNote:"La capture sert uniquement à vérifier que vous êtes un utilisateur actif. Aucun autre fichier n'est envoyé.",licSend:"Envoyer la demande",licSending:"Envoi…",licOk:"Demande reçue. Je vous répondrai après vérification.",licErr:"L'envoi a échoué. Réessayez ou contactez-moi sur WhatsApp.",licSize:"L'image est trop lourde (max 10 Mo).",licType:"Choisissez un fichier image."},
+en:{vid_t:"Watch how to install and use Dalil",vid_play:"Play video",vid_yt:"Watch on YouTube",promo_cta:"How do I become an active user?",promo_live:"Offer open",promo_t:"150 MAD a year instead of 300 — for the first 50 active users",promo_d:"Active users only: install Dalil, index at least one folder and run your first search during the trial. Registering alone does not count.",promo_reg:"To register, contact me:",seats_l:"founding seats left",promo_full:"All seats are taken",q0:"How do I get the 150 MAD price?",a0:"1) Install the beta. 2) Index at least one folder. 3) Run your first search. 4) Send a screenshot of the results on WhatsApp with your name, city and phone. Or send the request with the “Request a license” button. The first 50 lawyers to do this keep 150 MAD/year for life. Registering alone does not count.",nav1:"Features",nav2:"How it works",nav3:"FAQ",dl:"Download",dl2:"Download Beta",dl32:"32-bit version",dlhint:"All files and SHA-256 check",
 badge:"14-day free trial",
 h1:"Find any word inside all your files.",
 lead:"Dalil indexes your Word, Excel and PDF files. Type a word and see every file that contains it in seconds, with no internet connection. Built for lawyers and law firms.",
@@ -99,10 +99,12 @@ q5:"Are my files sent over the internet?",a5:"No. The index is fully local. The 
 q6:"What happens after 14 days?",a6:"The app stops until you renew: 150 MAD a year for the first 50 active users, otherwise 300 MAD. Your files are never deleted or modified.",
 modalTitle:"Choose Install Version",modalDesc:"Choose the version for your Windows:",dl64:"64-bit Version",dl32:"32-bit Version",modalNote:"Most modern devices use the 64-bit version.",register:"Register",regForm:"Registration Form",
 fin:"Install Dalil today",finp:"Download it, index a folder and type your first word. Need help? Message me on WhatsApp.",
-ftc:"Contact the Dev",rights:"All rights reserved",made:"Made in Khouribga, Morocco"}
+ftc:"Contact the Dev",rights:"All rights reserved",made:"Made in Khouribga, Morocco",licBtn:"Request a license",licTitle:"License request",licDesc:"Fill in your details and attach a screenshot of your search results. Your license will be sent after verification.",fName:"Full name *",fCity:"City *",fPhone:"Phone *",fEmail:"Email (optional)",fMachine:"Machine code if shown (optional)",fShot:"Screenshot of search results *",licNote:"The screenshot is only used to verify that you are an active user. No other files are sent.",licSend:"Send request",licSending:"Sending…",licOk:"Request received. I will reply after verification.",licErr:"Could not send. Please try again or message me on WhatsApp.",licSize:"Image is too large (max 10 MB).",licType:"Choose an image file."}
 };
+var LANG="ar";
+function tr(k){var d=T[LANG]||T.ar;return d[k]!==undefined?d[k]:(T.ar[k]||k)}
 function setLang(l){
-  var d=T[l];document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
+  var d=T[l];LANG=l;document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
   document.querySelectorAll("[data-i]").forEach(function(e){var v=d[e.getAttribute("data-i")];if(v!==undefined)e.textContent=v});
   document.title=l==="ar"?"دليل — بحث داخل ملفاتك بالعربية، بدون إنترنت":l==="fr"?"Dalil — Recherche dans vos documents, hors ligne":"Dalil — Search your documents offline";
   document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
@@ -155,4 +157,75 @@ document.querySelectorAll("a[data-dl]").forEach(function(a){a.href=CONFIG.downlo
   closeBtn.addEventListener("click",closeModal);
   modal.addEventListener("click",function(e){if(e.target===modal)closeModal()});
   document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!modal.hidden)closeModal()});
+})();
+// Licence request modal + form
+(function(){
+  var modal=document.getElementById("licModal"),form=document.getElementById("licForm");
+  if(!modal||!form)return;
+  var status=document.getElementById("licStatus"),ts=document.getElementById("licTs"),closeBtn=document.getElementById("licClose");
+  var submit=form.querySelector('button[type="submit"]');
+  function setStatus(kind,msg){status.className="form-status"+(kind?" "+kind:"");status.textContent=msg||""}
+  function open(){
+    modal.hidden=false;document.body.style.overflow="hidden";
+    ts.value=Date.now();setStatus("","");
+    var first=form.querySelector('input[name="name"]');if(first)first.focus();
+  }
+  function close(){modal.hidden=true;document.body.style.overflow=""}
+  var head=document.getElementById("licBtn");
+  if(head)head.addEventListener("click",open);
+  document.querySelectorAll("[data-lic]").forEach(function(b){b.addEventListener("click",open)});
+  closeBtn.addEventListener("click",close);
+  modal.addEventListener("click",function(e){if(e.target===modal)close()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!modal.hidden)close()});
+
+  function shrink(file){
+    return new Promise(function(resolve){
+      if(!file||!/^image\//.test(file.type)||file.size<700*1024)return resolve(file);
+      var url=URL.createObjectURL(file),img=new Image();
+      img.onload=function(){
+        try{
+          var max=1600,w=img.naturalWidth||img.width,h=img.naturalHeight||img.height;
+          if(Math.max(w,h)>max){var r=max/Math.max(w,h);w=Math.round(w*r);h=Math.round(h*r)}
+          var c=document.createElement("canvas");c.width=w;c.height=h;
+          var ctx=c.getContext("2d");ctx.fillStyle="#fff";ctx.fillRect(0,0,w,h);ctx.drawImage(img,0,0,w,h);
+          c.toBlob(function(b){
+            URL.revokeObjectURL(url);
+            if(!b||b.size>=file.size)return resolve(file);
+            resolve(new File([b],"screenshot.jpg",{type:"image/jpeg"}));
+          },"image/jpeg",.82);
+        }catch(err){URL.revokeObjectURL(url);resolve(file)}
+      };
+      img.onerror=function(){URL.revokeObjectURL(url);resolve(file)};
+      img.src=url;
+    });
+  }
+
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var file=form.querySelector('input[name="screenshot"]').files[0];
+    if(file&&!/^image\//.test(file.type)){setStatus("err",tr("licType"));return}
+    if(file&&file.size>10*1024*1024){setStatus("err",tr("licSize"));return}
+    if(!form.checkValidity()){form.reportValidity();return}
+    submit.disabled=true;setStatus("",tr("licSending"));
+    shrink(file).then(function(out){
+      if(out&&out.size>6*1024*1024)throw new Error("too_large");
+      var fd=new FormData(form);
+      if(out&&out!==file){fd.delete("screenshot");fd.append("screenshot",out)}
+      return fetch(form.action,{method:"POST",body:fd});
+    }).then(function(r){
+      return r.json().catch(function(){return {}}).then(function(d){
+        if(!r.ok||!d.ok){
+          var err=new Error(d.error||"failed");
+          err.code=d.error;
+          throw err;
+        }
+        setStatus("ok",tr("licOk"));
+        form.reset();ts.value=Date.now();
+      });
+    }).catch(function(err){
+      if(err&&err.code==="too_large"||err&&err.message==="too_large")setStatus("err",tr("licSize"));
+      else setStatus("err",tr("licErr"));
+      console.error(err);
+    }).then(function(){submit.disabled=false});
+  });
 })();
